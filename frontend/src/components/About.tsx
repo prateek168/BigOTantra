@@ -1,4 +1,3 @@
-// import { Statistics } from "./Statistics";
 import { FiInstagram } from "react-icons/fi";
 import pilot from "../assets/pilot.png";
 
@@ -9,7 +8,7 @@ export const About = () => {
         <div className="px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12">
           <img
             src={pilot}
-            alt=""
+            alt="Pilot"
             className="w-[300px] object-contain rounded-lg"
           />
           <div className="bg-green-0 flex flex-col justify-between">
@@ -33,15 +32,30 @@ export const About = () => {
                 📩 Find our info below! 👇
                 <br />
                 <br />
-                <FiInstagram className="inline-block w-6 h-6 text-pink-500" />{" "}
-                @your_username
-                {"   "}
-                <FiInstagram className="inline-block w-6 h-6 text-pink-500" />{" "}
-                @your_username
+                <div className="flex items-center gap-6 mt-2">
+                  <a
+                    href="https://www.instagram.com/_.prateek.verma._"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-primary font-md hover:underline"
+                  >
+                    <FiInstagram className="w-6 h-6 text-pink-500" />
+                    @_.prateek.verma._
+                  </a>
+                  <a
+                    href="https://www.instagram.com/tejasw_mishra"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-primary font-md hover:underline"
+                  >
+                    <FiInstagram className="w-6 h-6 text-pink-500" />
+                    @tejasw_mishra
+                  </a>
+                </div>
               </p>
             </div>
 
-            {/* Isko dynamic bnana hai  */}
+            {/* Isko dynamic bnana hai */}
             {/* <Statistics /> */}
           </div>
         </div>

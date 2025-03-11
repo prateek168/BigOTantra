@@ -13,6 +13,7 @@ interface TeamProps {
   imageUrl: string;
   name: string;
   position: string;
+  description: string;
   socialNetworks: SociaNetworkslProps[];
 }
 
@@ -26,12 +27,13 @@ const teamList: TeamProps[] = [
     imageUrl: "https://i.pravatar.cc/150?img=17",
     name: "Prateek Verma",
     position: "Web Developer",
+    description:
+      "Enthusiastic developer bringing creative ideas to life through innovative web solutions.",
     socialNetworks: [
       {
         name: "Linkedin",
         url: "https://www.linkedin.com/in/prateek-verma168",
       },
-
       {
         name: "Instagram",
         url: "https://www.instagram.com/",
@@ -42,13 +44,15 @@ const teamList: TeamProps[] = [
     imageUrl: "https://i.pravatar.cc/150?img=17",
     name: "Tejasw Mishra",
     position: "Web Developer",
+    description:
+      "Passionate about crafting seamless web experiences with clean and efficient code.",
     socialNetworks: [
       {
         name: "Linkedin",
         url: "https://www.linkedin.com/in/tejasw-mishra-23a071272/",
       },
       {
-        name: "Facebook",
+        name: "Instagram",
         url: "https://www.facebook.com/",
       },
     ],
@@ -84,7 +88,13 @@ export const Team = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
         {teamList.map(
-          ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
+          ({
+            imageUrl,
+            name,
+            position,
+            description,
+            socialNetworks,
+          }: TeamProps) => (
             <Card
               key={name}
               className="bg-muted/50 relative mt-8 flex flex-col justify-center items-center"
@@ -102,7 +112,7 @@ export const Team = () => {
               </CardHeader>
 
               <CardContent className="text-center pb-2">
-                <p>We Love doing Krewzy - Krewzy Stuffs !</p>
+                <p>{description}</p>
               </CardContent>
 
               <CardFooter>

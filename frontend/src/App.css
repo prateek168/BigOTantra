@@ -91,6 +91,10 @@
     --ring: 142.1 76.2% 36.3%;
     --radius: 0.5rem;
   }
+/* Ensures scrollbar space is always reserved */
+html {
+  overflow-y: scroll;
+}
 
   .dark {
     --background: 20 14.3% 4.1%;
@@ -123,3 +127,5 @@
     @apply bg-background text-foreground;
   }
 }
+
+

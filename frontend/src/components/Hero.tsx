@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";  
 import { Button } from "./ui/button";
 import { buttonVariants } from "./ui/button";
 import { HeroCards } from "./HeroCards";
@@ -27,9 +28,11 @@ export const Hero = () => {
 
         {/* Buttons */}
         <div className="flex flex-col md:flex-row justify-center md:justify-start gap-6">
-          <Button className="w-full md:w-auto px-8 py-4 text-xl">
-            BigOTantra- Ask Ai ✨
-          </Button>
+          <Link to="/ask">
+            <Button className="w-full md:w-auto px-8 py-4 text-xl">
+              BigOTantra - Ask AI ✨
+            </Button>
+          </Link>
 
           <a
             rel="noreferrer noopener"
