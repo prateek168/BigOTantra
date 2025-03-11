@@ -111,7 +111,7 @@ export const HeroCards = () => {
           <CardTitle className="flex item-center justify-between">
             Unlimited
             <Badge variant="secondary" className="text-sm text-primary">
-              Most popular
+              Do it Now !
             </Badge>
           </CardTitle>
           <div>
@@ -132,7 +132,7 @@ export const HeroCards = () => {
 
         <CardFooter className="flex">
           <div className="space-y-4">
-            {["4 Team member", "4 GB Storage", "Upto 6 pages"].map(
+            {["Unlimited Analysis", "AI suggestions", "Code optimization"].map(
               (benefit: string) => (
                 <span key={benefit} className="flex">
                   <Check className="text-green-500" />{" "}
